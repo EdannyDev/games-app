@@ -14,19 +14,21 @@ El sistema combina **frontend y backend** en la misma aplicación, integrando ta
 
 ## 🛠️Tecnologías utilizadas
 ### Frontend  
-- **Next.js** – framework de React para aplicaciones web modernas.  
-- **Emotion Styled** – librería de estilos CSS-in-JS.  
-- **Animate.css** – animaciones predefinidas.  
-- **FontAwesome** – íconos para la UI.  
-- **Axios** – cliente HTTP.  
-- **Stripe.js + @stripe/react-stripe-js** – integración de pagos con tarjeta.  
+- **Next.js** (Framework para frontend)
+- **Emotion Styled** (estilos)  
+- **Animate.css** (animaciones predefinidas)  
+- **FontAwesome** (iconos)  
+- **Axios** (consumo de APIs)
+- **Stripe.js + @stripe/react-stripe-js** (integración de pagos con tarjeta)  
 
 ### Backend  
-- **Node.js + Express** – servidor backend.  
-- **MongoDB / Mongoose** – base de datos NoSQL.  
-- **JWT + bcryptjs** – autenticación y seguridad.  
-- **Multer** – gestión de archivos (imágenes de productos).  
-- **dotenv y cors** – configuración y seguridad.  
+- **Node.js**
+- **Express** (Framework para APIs REST)
+- **MongoDB / Mongoose** (Base de datos NoSQL y modelado de datos) 
+- **JWT** (autenticación y autorización)
+- **bcryptjs** (encriptación de contraseñas)
+- **CORS** (seguridad en solicitudes cross-origin)
+- **Multer** (gestión de archivos) 
 
 ## ⚙️Instalación y ejecución  
 
