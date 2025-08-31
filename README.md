@@ -28,7 +28,9 @@ El sistema combina **frontend y backend** en la misma aplicación, integrando ta
 - **JWT** (autenticación y autorización)
 - **bcryptjs** (encriptación de contraseñas)
 - **CORS** (seguridad en solicitudes cross-origin)
-- **Multer** (gestión de archivos) 
+- **dotenv** (variables de entorno)
+- **Multer** (gestión de subida de imágenes)
+- **npm** (gestor de dependencias backend)
 
 ## ⚙️Instalación y ejecución  
 
