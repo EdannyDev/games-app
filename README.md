@@ -1,40 +1,63 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+🚀Tienda en línea de videojuegos - Frontend y Backend
 
-## Getting Started
+📌Descripción
+Este proyecto es una tienda en línea de videojuegos, que incluye un carrito de compras y un panel administrativo integrado.
 
-First, run the development server:
+-Los usuarios normales pueden explorar el catálogo de videojuegos, agregar productos al carrito y realizar compras seguras mediante Stripe.
 
-```bash
+-Los administradores tienen acceso adicional al panel de administración, desde donde gestionan productos, usuarios y pedidos.
+
+El sistema combina frontend y backend en una misma aplicación, integrando tanto la interfaz de usuario como la lógica de negocio.
+
+🛠️Tecnologías utilizadas
+1.-Frontend
+-Next.js – framework de React para aplicaciones web modernas.
+-Emotion Styled – librería de estilos CSS-in-JS.
+-Animate.css – animaciones predefinidas.
+-FontAwesome – íconos para la UI.
+-Axios – cliente HTTP.
+-Stripe.js + @stripe/react-stripe-js – integración de pagos con tarjeta.
+
+2.-Backend
+-Node.js + Express – servidor backend.
+-MongoDB (Mongoose) – base de datos NoSQL.
+-JSON Web Tokens (JWT) + bcryptjs – autenticación y seguridad.
+-Multer – gestión de archivos (imágenes de productos).
+-dotenv y cors – configuración y seguridad.
+
+⚙️Instalación y ejecución
+
+1.-Clonar el repositorio:
+git clone https://github.com/EdannyDev/games-app
+
+2.-Instalar dependencias:
+npm install
+
+3.-Configurar variables de entorno:
+En la raíz del proyecto (Next.js):
+.env.local
+STRIPE_SECRET_KEY=sk_test_xxxxxxxxxxxxx
+NEXT_PUBLIC_STRIPE_PUBLIC_KEY=pk_test_xxxxxxxxxxxxx
+
+4.-Dentro de la carpeta backend:
+.env
+PORT=5000
+MONGO_URI=mongodb://localhost:27017/gamesDB
+JWT_SECRET=tu_secreto_jwt
+
+5.-Levantar la aplicación en modo desarrollo:
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+6.-Acceder desde el navegador:
+Frontend (Tienda + Panel Admin): http://localhost:3000
+Backend API (Express): http://localhost:5000
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+✨Características principales
+-Carrito de compras con pagos seguros mediante Stripe.
+-Catálogo dinámico de videojuegos, con detalles y búsqueda.
+-Autenticación de usuarios con roles (usuario y administrador).
+-Panel administrativo:
+    1.Gestión de productos.
+    2.Gestión de usuarios.
+-Subida de imágenes para productos mediante Multer.
+-Interfaz moderna y animada con Emotion Styled, Animate.css y FontAwesome.
